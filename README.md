@@ -5,13 +5,13 @@ Collection of my projects
 
 ## Background
 
-This project is my attempt of refactoring Horiseon's existing website code to add accesibility features through HTML5 and CSS best practice, and meeting the acceptance criteria as provided below.
+This project is my attempt at developing a "Portfolio Website" which demonstrates projects I have developed using Full Stack dev skills
 
-[View my final project on Github](https://samdemarco.github.io/horiseon-code-refactoring-project/)
+[View my Portfolio website on Github](https://samdemarco.github.io/portfolio/)
 
 ## Challenges
 
-ADD COMMENTARY
+Biggest challenge by far was figuring out the best strategy in deploying a responsive website...which I'm not too sure if I've managed to do properly!
   
 ## Assignment Details 
 
