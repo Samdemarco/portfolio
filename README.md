@@ -20,7 +20,7 @@ With these points in mind, in this Challenge you’ll set yourself up for future
 Note: If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course.
 Let’s take a look at what a user story written from the perspective of a hiring manager might look like. As you might remember from your first Challenge, we follow the AS AN / I WANT / SO THAT format.
 
-User Story
+# User Story
 
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
@@ -28,7 +28,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 
 
-Acceptance Criteria
+# Acceptance Criteria
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
 GIVEN I need to sample a potential employee's previous work
