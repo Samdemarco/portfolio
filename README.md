@@ -50,7 +50,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following image shows the web application's appearance and functionality:
 
-[See the Mock Up](https://github.com/Samdemarco/horiseon-code-refactoring-project/blob/main/assets/images/01-html-css-git-homework-demo.png)
+[See the Mock Up](https://github.com/Samdemarco/portfolio/blob/128e4f270dfbbaa82fe4b0ab3c69391168bdfda0/assets/images/02-advanced-css-homework-demo.gif)
   
 ## My Development Enviromment:
   
