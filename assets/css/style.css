@@ -1,1 +1,473 @@
+:root { /*DELCARE CSS VARIABLES/CONSTANTS*/
+    --primary-color:black;
+    --headertext-color: white;
+    --navtext-color: white;
+    --header-color:black;
+    --backgroundBody: #f4f4f4;
+    --universal_font: impact; 
+    --para_font: Helvetica;
 
+  }
+  
+  * { /* UNIVERAL SELECTOR, PADDING & MARGINS */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body {
+        font-family: Helvetica, Arial, sans-serif, Impact;
+        margin: 0;
+        font-size: 14px;
+        background-color: var(--backgroundBody);
+        align-items: start;
+        min-height: 100vh;
+      }
+        /* APPLY STYLING TO <header> */
+header {
+    padding: 20px 35px;
+    background-color: var(--header-color);
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    flex-wrap: wrap;
+   
+  }
+
+header h1 {
+    font-weight: 100;
+    font-family: var(--universal_font);
+    font-size: 36px;
+    color: var(--headertext-color);
+    margin: 0;
+  }
+
+header nav {
+    margin: 7px 0;
+  }
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  }
+
+header nav ul li a {
+    margin: 0 30px;
+    font-family:  var(--universal_font);
+    font-weight: lighter;
+    font-size: 1.7vw;
+    color: var(--navtext-color);
+    text-decoration: none;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+  }
+
+
+  /*APPLY STYLING TO HERO COVER*/
+.hero{
+    height: 400px;
+    background-image: url("./assets/hero_background.jpg");
+    font-family: var(--universal_font);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+  }
+    /*HERO BACKGROUND TEXT*/
+  .hero h2 {
+    font-family: var(--universal_font);
+    font-weight: 100;
+
+    font-size: 26px;
+    color: var(--headertext-color);
+    margin-top: 280px;
+    margin-right: 10px;
+
+  }  
+  /*AVATAR/PROFILE PICTURE*/
+.profile_pic {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+    height:260px;
+    width: 175px;
+  }
+  /*<section> STYLING APPLIED FOR BOTH "ABOUT ME" AND "WORK"*/
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    font-family: var(--universal_font);
+
+}
+.section-detail {
+    margin: 18px auto;
+    padding-bottom: 50px;
+    width: 100%;
+    font-family: var(--para_font);
+    font-weight: 100;
+    font-size: 19px;
+    display: flex;
+}
+.section-title {
+    font-size: 48px;
+    font-family: var(--universal_font);
+    font-weight: 100;
+    display: inline-block;
+    border-right: 5px solid;
+    margin-right: 35px;
+    color: var(--primary-color);
+    text-align: right;
+    padding: 30px;
+}
+  /*ROW AND COLUMN ELEMENTS WILL BE USED TO LAYOUT IMAGE GALLERY*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%
+    margin: 0 auto;
+  }  
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;   
+  }
+    /*"column2" CREATED TO CONTAIN LARGER IMAGE RELATED TO LATEST WORK EXPERIENCE IN IMAGE GALLERY*/
+.column2 {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+  .column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;   
+  }
+
+  /*TEXT OVERLAY/CAPTION STYLING FOR IMAGES*/
+figCaption{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -5%;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color:  rgb(22, 44, 44);
+    border: solid 1px var(--primary-color);
+    background-color: white;
+  }
+    /*FOOTER ELEMENT USED TO 'CONTACT ME' INFO*/  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    align-items: center;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+  }     
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+
+  }    
+  .footer__addr h2 {
+    margin-top: 0.1em;
+    font-size: 48px;
+    font-weight: 400;
+  }  
+  .nav__title {
+    margin-top: 1.3em;
+    font-family: var(--universal_font) ;
+    font-weight: 400;
+    font-size: 24px;
+  } 
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }  
+  .footer li {
+    line-height: 2em;
+  }  
+  .footer a {
+    text-decoration: none;
+  }  
+  .footer__nav {
+    display: inline-block;
+    ;
+    flex-flow: row wrap;
+  }  
+  .footer__nav > * {
+    flex: 1 50%;
+    display: inline-block;
+
+    margin-right: 1.25em;
+  }
+   
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 980px) {
+ 
+  header {
+    padding-bottom: 10px;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 1.5;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .section-title {
+    font-size: 40px;
+    font-family: var(--universal_font);
+    font-weight: 100;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 30px;
+}
+  .section-detail {
+    margin: 18px auto;
+    padding-bottom: 50px;
+    width: 100%;
+    font-family: var(--para_font);
+    font-weight: 100;
+    font-size: 14px;
+    display: flex;
+  }  
+  .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  .column2 {
+      flex: 100%;
+      max-width: 100%;
+    }
+  .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;   
+    }
+  .column2 img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;   
+  }
+  figCaption{
+      margin-left: 5px;
+      font-size: 5px;
+  }
+  .hero{
+      background-size: cover;
+  }
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    align-items: center;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    } 
+  .footer__addr h2 {
+    margin-top: 0.1em;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .nav__title {
+    margin-top: 1.3em;
+    justify-content: space-between;
+    font-family: var(--universal_font) ;
+    font-weight: 200;
+    font-size: 18px;
+  }
+  .footer__nav > * {
+    flex: 1;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+  }     
+  .footer__addr {
+    flex: 1 0px;
+  }  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+
+/* Responsive layout - revert to single column ideal for viewing on smartphones */
+@media screen and (max-width: 600px) {
+
+  header nav {
+      flex-direction: column;
+    }
+  header nav ul {
+    flex-direction: column;
+    }
+
+  header nav ul li a {
+    flex-direction: column;
+    }
+  .hero{
+    flex-direction: column;
+    justify-content: center;
+    background-image: none;
+    position: relative;
+    top: -120px; 
+    left: 70px;
+  }
+  section {
+      text-align: center;
+      font-family: var(--universal_font);
+      justify-content: center;
+
+  }
+  .section-detail {
+      flex-direction: column;
+  }
+  .section-title {
+      font-size: 48px;
+      font-family: var(--universal_font);
+      font-weight: 100;
+      flex-direction: column;
+      border-bottom: 5px solid;
+      border-right: none;
+      color: var(--primary-color);
+      text-align: center;
+      padding: 15px;
+      margin auto;
+  }
+  p {
+    flex-direction: column;
+    justify-content: center;
+    display: contents;
+    padding: 15px, 15px;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+  .column2 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 30px 30px;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    text-align: center;
+    
+  }   
+  
+  .nav__title {
+    margin-top: 1.3em;
+    font-family: var(--universal_font) ;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 0.1em;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    margin-top: 1.3em;
+    font-family: var(--universal_font) ;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+ 
+}
